@@ -1,0 +1,18 @@
+;
+; BIND data file for local loopback interface
+;
+$TTL	604800
+@	IN	SOA	ns.thomas-severan.local. root.thomas-severan.local. (
+			      2		; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 604800 )	; Negative Cache TTL
+;
+@	IN	NS	ns.thomas-severan.local.
+ns	IN	A	10.205.55.13
+@	IN	AAAA	::1
+smtp	IN	A	10.205.55.23
+pop	IN	A	10.205.55.33
+imap	IN	A	10.205.55.43
+
